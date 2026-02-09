@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Drawing Generator</title>
   </head>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="drawing-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the drawing"
@@ -24,11 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          The drawing prompt will go here
-          <br />
-          "A tiny, magical shop hidden inside a hollowed-out tree stump."
-        </div>
+        <div class="prompt" id="prompt"></div>
       </main>
 
       <footer>
