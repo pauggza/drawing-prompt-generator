@@ -7,44 +7,50 @@
     <title>AI Drawing Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the drawing prompt generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Welcome to the drawing prompt generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the drawing"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        The drawing prompt will go here
-        <br />
-        "A tiny, magical shop hidden inside a hollowed-out tree stump."
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the drawing"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          The drawing prompt will go here
+          <br />
+          "A tiny, magical shop hidden inside a hollowed-out tree stump."
+        </div>
+      </main>
 
-    <footer>
-      <p>
-        This AI project was coded with 💖 by
-        <a href="https://github.com/pauggza" target="_blank">Paulina</a> and is
-        <a
-          href="https://github.com/pauggza/drawing-prompt-generator"
-          target="_blank"
-        >
-          on GitHub</a
-        >
-        and
-        <a href="https://drawing-prompt-generator.onrender.com" target="_blank"
-          >hosted on Render</a
-        >
-      </p>
-    </footer>
+      <footer>
+        <p>
+          This AI project was coded with 💖 by
+          <a href="https://github.com/pauggza" target="_blank">Paulina</a> and
+          is
+          <a
+            href="https://github.com/pauggza/drawing-prompt-generator"
+            target="_blank"
+          >
+            on GitHub</a
+          >
+          and
+          <a
+            href="https://drawing-prompt-generator.onrender.com"
+            target="_blank"
+            >hosted on Render</a
+          >
+        </p>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
