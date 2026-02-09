@@ -15,19 +15,22 @@
       </header>
 
       <main>
-        <form id="drawing-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the drawing"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="prompt" id="prompt"></div>
+        <div class="form-container">
+          <form id="drawing-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of the drawing you'd like"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i. e.: Flower, Horse, Magic, Fairy</div>
+        </div>
+        <div class="prompt hidden" id="prompt"></div>
       </main>
 
       <footer>

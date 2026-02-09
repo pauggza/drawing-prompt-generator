@@ -22,6 +22,10 @@ function generatePrompt(event) {
     "Keep it under 15 words. Avoid flowery language; focus on visual impact.";
   let ApiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let promptElement = document.querySelector("#prompt");
+  promptElement.classList.remove("hidden");
+  promptElement.innerHTML = `<div class="blink">Generating prompt about ${instructionsInput.value}...</div>`;
+
   console.log("generating poem...");
   console.log(`prompt is ${prompt}`);
   console.log(`context is ${context}`);
